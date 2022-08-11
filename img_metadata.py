@@ -9,12 +9,12 @@ for file in os.listdir(image_path):
         exif_data = img.getexif()
         info_dict = {
             "Filename": img.filename,
-            "Image Size": img.size,
-            "Image Height": img.height,
-            "Image Width": img.width,
-            "Image Format": img.format,
-            "Image Mode": img.mode,
-            "Image is Animated": getattr(img, "is_animated", False),
+            "Size": img.size,
+            "Height": img.height,
+            "Width": img.width,
+            "Format": img.format,
+            "Mode": img.mode,
+            "is Animated": getattr(img, "is_animated", False),
             "Frames in Image": getattr(img, "n_frames", 1)
         }
     else:
